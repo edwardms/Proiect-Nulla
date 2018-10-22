@@ -38,6 +38,15 @@
     margin: 0 auto;
 }
 
+.login p {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+}
+
 .login form {
     padding: 100px 0px;
 }
@@ -52,18 +61,44 @@
 
 .login input:last-child {
     border: 0 transparent;
-    background-color: #fce98d;
+    background-color: #424242;
     font-size: 25px;
     transition: 0.5s; 
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
 }
 
 .login input:last-child:hover {
     background-color: #219121;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 120px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.button-signup input[type=submit]:hover {
+    background-color: #f74040;
+    color: black;
+
 }
 
 .footer-bar {
     height: 50px;
     margin: 0 auto;
-    width: 1000px;
-    text-align: center;
+    width: 100%;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.footer-bar p {
+    text-align: center; 
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
 }
