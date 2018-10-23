@@ -34,14 +34,25 @@
         <!-- main body; contact -->
         <div class="container">
             <div class="login">
-                <form method="POST">                                        
-                    <p style="text-decoration: none">Informatii contact</p>
-                    <input type="text" name="username" placeholder="Username"><br>
-                    <input type="password" name="password" placeholder="Password"><br>
+                <form method="POST" action="php/contact.inc.php">
+                    <p style="text-decoration: none">Contact</p>
+                    <h1 style="text-align: center">Pentru orice fel de intrebari si probleme, adresati-va administratorului site-ului completand casutele de mai jos</h1><br>
+                    <input type="text" name="name" placeholder="Nume" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <textarea name="zona-text" cols="40" rows="5" placeholder="Mesajul tau..." required></textarea><br>
                     <input type="submit" value="Submit">
-                </form>
-            </div>
+                </form>                
+            </div>           
         </div>
+        <?php
+            if (isset($_GET['info']) && $_GET['info'] == 'mesaj_trimis') {
+                echo '<p style="text-align: center; font-size: 20px; color: green; text-decoration: none">Mesajul tau a fost trimis cu succes! :)<br>
+                Administratorul site-ului te va contacta, pe adresa de email furnizata, cat de curand posibil</p>';
+            } else if (isset($_GET['info']) && $_GET['info'] == 'mesaj_esuat') {
+                echo '<p style="text-align: center; font-size: 20px;color: red; text-decoration: none">Mesajul tau nu a putut fi trimis! :( <br>
+                Asigurate ca toate casutele sunt completate si mesajul are minim 10 caractere</p>';
+            }
+        ?>
 
         <!-- footer -->
         <div class="container">
