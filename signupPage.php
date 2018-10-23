@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (isset($_SESSION['id'])) {
+        header("Location: home.php");
+    }    
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,13 +19,13 @@
         <!-- header -->
         <div class="container">
             <div class="nav-bar">
-                <a href="home.html">
+                <a href="home.php">
                     <img src="img/monkey-logo.png" alt="logo.jpg">
                 </a>
                 <ul>
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.php">Home</a></li>
                     <li><a href="signupPage.php" style="text-decoration: underline">Sign up</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -41,11 +48,11 @@
                         if (isset($_GET['info']) && $_GET['info'] == 'ok') {
                             echo '<p style="text-align: center; font-size: 20px; color: green; text-decoration: none">Contul a fost creat cu succes! :)</p>';
                         } else if (isset($_GET['info']) && $_GET['info'] == 'eroare'){
-                            echo '<p style="text-align: center; font-size: 20px;color: red; text-decoration: none">Contul nu a putut fi creat. :(</p>';
+                            echo '<p style="text-align: center; font-size: 20px;color: red; text-decoration: none">Contul nu a putut fi creat :(</p>';
                         } else if (isset($_GET['info']) && $_GET['info'] == 'exista'){
-                            echo '<p style="text-align: center; font-size: 20px;color: red; text-decoration: none">Username-ul exista deja.</p>';
+                            echo '<p style="text-align: center; font-size: 20px;color: red; text-decoration: none">Username-ul exista deja</p>';
                         } else if (isset($_GET['info']) && $_GET['info'] == 'parola_incorecta'){
-                            echo '<p style="text-align: center; font-size: 20px;color: red; text-decoration: none">Parola trebuie sa aiba minim 7 caractere.<br>
+                            echo '<p style="text-align: center; font-size: 20px;color: red; text-decoration: none">Parola trebuie sa aiba minim 7 caractere<br>
                             Parola din campul "Repeta parola" trebuie sa fie identica cu parola din campul "Parola"</p>';
                         }                   
                     ?>                    

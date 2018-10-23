@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,13 +16,17 @@
         <!-- header -->
         <div class="container">
             <div class="nav-bar">
-                <a href="home.html">
+                <a href="home.php">
                     <img src="img/monkey-logo.png" alt="logo.jpg">
                 </a>
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="signupPage.php" >Sign up</a></li>
-                    <li><a href="contact.html"style="text-decoration: underline">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <?php
+                        if (!isset($_SESSION['id'])) {
+                            echo '<li><a href="signupPage.php">Sign up</a></li>';
+                        }
+                    ?> 
+                    <li><a href="contact.php"style="text-decoration: underline">Contact</a></li>
                 </ul>
             </div>
         </div>
