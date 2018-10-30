@@ -1,0 +1,154 @@
+.video-container {
+    width: 100%;
+    height: 580px;
+    margin: 0 auto;
+    background-color: #969696
+}
+
+.ipsum {
+    padding-top: 50px;
+    height: 300px;
+    width: 100%;
+}
+
+.ipsum h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Mali', cursive;
+}
+
+.ipsum p {
+    font-size: 20px;
+    font-family: 'Mali', cursive;
+    text-indent: 100px;
+}
+
+.castele {
+    width: 100%;
+    height: 500px;
+    background-color: #89d3ff;
+    padding: 20px 0px;
+}
+
+.castele article {
+    width: 23%;
+    float: left;
+    margin: 1% 1%;
+    height: 480px;
+}
+
+.castele img {
+    width: 230px;
+    height: 130px;
+}
+
+.castele h1 {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.castele p {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    text-indent: 10px;
+    padding: 5px 5px;
+}
+
+.peles {
+    width: 192px;
+    background-color: #ffa323;
+}
+
+.bran {
+    width: 192px;
+    background-color: #ffa323;
+    font-size: 16px;
+}
+
+.corvinilor {
+    width: 192px;
+    background-color: #ffa323;
+    font-size: 16px;
+}
+
+.neamt {
+    width: 192px;
+    background-color: #ffa323;
+    font-size: 16px;
+}
+
+.poze_aleatorii {
+    width: 100%;
+    height: 600px;
+    text-align: center; 
+}
+
+.poze_aleatorii div {
+    display: inline;
+}
+
+.poze_aleatorii h1 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 10px;
+}
+
+.poze_aleatorii p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;    
+    padding-top: 10px;
+}
+
+.poze_aleatorii input {
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;    
+    border-radius: 10px;
+    width: 200px;
+    height: 80px;
+    background-color: goldenrod;
+    color: white;
+    border: 0px solid;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.poze_aleatorii input:hover {
+    background-color: khaki;
+    color: black;
+}
+
+.poze_aleatorii div {
+    margin: 0px 20px;
+}
+
+.poze_aleatorii img {
+    width: 200px;
+    height: 300px;
+}
+
+
+
+
+
+.linkuri {
+    width: 100%;
+    background-color: #5a6896;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding: 10px 0px;
+    overflow: hidden;
+}
+
+.linkuri img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    display: inline;
+}
+
+.linkuri a {
+    text-decoration: none;
+}

@@ -48,13 +48,9 @@
                 ';                
                 if (isset($_GET['info']) && $_GET['info'] == 'gresit') {
                     echo '<p style="text-align: center; font-size: 20px;color: red; text-decoration: none">Parola este gresita</p>';
-                }              
+                }
             } else {
-                echo '<p style="text-align: center; font-family: Lato; font-size: 35px; padding-top:100px">Prenumele meu este ' . $_SESSION['prenume'];
-                echo '
-                <form action="php/logout.php" style="text-align: center">
-                    <input type="submit" value="Log out">
-                </form>';
+                header("Location: second_part/homeSP.php");
             }
         ?>             
 

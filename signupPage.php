@@ -61,8 +61,8 @@
         </div>
 
         <!-- footer -->
-        <div class="container">
-            <div class="footer-bar">
+        <div class="footer-bar">
+            <div class="container">
                 <div>
                     <p>Informatii site</p><br>
                 </div>

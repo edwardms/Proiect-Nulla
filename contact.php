@@ -24,9 +24,15 @@
                     <?php
                         if (!isset($_SESSION['id'])) {
                             echo '<li><a href="signupPage.php">Sign up</a></li>';
+                        } else if (isset($_SESSION['id'])) {
+                            echo '
+                            <li><a href="second_part/diverseSP.php">Diverse</a></li>
+                            <li><a href="#">Blackjack</a></li>
+                            <li><a href="#">Galerie foto</a></li>                            
+                            ';
                         }
-                    ?> 
-                    <li><a href="contact.php"style="text-decoration: underline">Contact</a></li>
+                    ?>                    
+                    <li><a href="contact.php" style="text-decoration: underline">Contact</a></li>
                 </ul>
             </div>
         </div>
