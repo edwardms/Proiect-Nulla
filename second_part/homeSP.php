@@ -1,6 +1,5 @@
 <?php
     session_start();
-    require 'php/account.php';
     if (!isset($_SESSION['id'])) {
         header("Location: ../home.php");
     }
@@ -31,7 +30,7 @@
                         }
                     ?> 
                     <li><a href="diverseSP.php">Diverse</a></li>
-                    <li><a href="#">Blackjack</a></li>
+                    <li><a href="blackjackSP.php">Blackjack</a></li>
                     <li><a href="#">Galerie foto</a></li>
                     <li><a href="../contact.php">Contact</a></li>
                 </ul>
@@ -48,17 +47,30 @@
                     <p>Prenume: &nbsp; <?php echo $_SESSION['prenume'] ?></p>
                     <p>Utilizator: &nbsp; <?php echo $_SESSION['utilizator'] ?> <br></p>
                     <p>Email: &nbsp; <?php echo $_SESSION['email'] ?> </p><br>
-                    <p>Poza</p>
-                    <img>
+                    <p>Poza de profil</p><br>
+
+                    <div>
+                        <form action="php/poza_profil.php" method="post" enctype="multipart/form-data">
+                            <input type="file" name="imagine"><br><br>
+                            <input type="submit" value="Incarca poza">
+                        </form>
+                    </div><br>
+                    <div class="poza_profil">
+                        <?php                        
+                        $dirname = "poze_profil/" . $_SESSION['nume'] . "_" . $_SESSION['prenume'] . ".jpg";                       
+                        echo '<img src="' . $dirname . '" alt="Poza de profil nu exista inca. Incarcati o poza"><br>';
+                        ?>
+                    </div><br>
 
                     <form action="../php/logout.inc.php" method="post">
                         <input type="submit" Value="Log out">
                     </form>
                 </div>
-             </div>       
+             </div>   
         </div>
 
         <!-- footer -->
+        <footer>
         <div class="footer-bar">
             <div class="container">
                 <div>
@@ -66,8 +78,9 @@
                 </div>
                 <div>
                     <p>Monkey Tuxedo &copy;All copyrights reserved 2018 | edwardms&reg;</p>
-                </div>                
+                </div>
             </div>
         </div>
+        </footer>
     </body>
 </html>

@@ -27,7 +27,7 @@
                         } else if (isset($_SESSION['id'])) {
                             echo '
                             <li><a href="second_part/diverseSP.php">Diverse</a></li>
-                            <li><a href="#">Blackjack</a></li>
+                            <li><a href="second_part/blackjackSP.php">Blackjack</a></li>
                             <li><a href="#">Galerie foto</a></li>                            
                             ';
                         }

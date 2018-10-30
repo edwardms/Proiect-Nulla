@@ -94,6 +94,7 @@
     display: block;
     position: absolute;
     margin-bottom: 10px;
+    bottom: 1;
 }
 
 .footer-bar p {
