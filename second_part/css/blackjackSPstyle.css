@@ -1,5 +1,45 @@
-.main-container {
-    width: 100%;
-    background-color: #7084ad;
-    height: 700px;
+.blackjack-body {
+    width: 100%;  
+    padding-top: 50px;
+    background-color: #777a89;
+}
+
+.titlu {
+    margin: 0 auto;
+    width: 500px;
+    border: 3px solid red;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 25px 0px;
+}
+
+.joc {
+    margin: 0 auto;    
+    border: 3px solid red;
+    width: 500px;
+    min-height: 400px;
+    text-align: center;
+    padding: 50px 0px;    
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.joc input {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #991313;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.joc input:hover {
+    background-color: #058728;
+}
+
+#zona-scor-final {
+    margin-bottom: 50px;
 }

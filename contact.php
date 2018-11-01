@@ -42,7 +42,7 @@
             <div class="login">
                 <form method="POST" action="php/contact.inc.php">
                     <p style="text-decoration: none">Contact</p>
-                    <h1 style="text-align: center">Pentru orice fel de intrebari si probleme, adresati-va administratorului site-ului completand casutele de mai jos</h1><br>
+                    <h1 style="text-align: center">Pentru orice fel de intrebari sau probleme, adresati-va administratorului site-ului completand casutele de mai jos</h1><br>
                     <input type="text" name="name" placeholder="Nume" required><br>
                     <input type="email" name="email" placeholder="Email" required><br>
                     <textarea name="zona-text" cols="40" rows="5" placeholder="Mesajul tau..." required></textarea><br>

@@ -8,7 +8,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Monkey Tuxedo - Home</title>
+        <title>Monkey Tuxedo - Blackjack</title>
         <link href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
         <link href="css/style.css" rel="stylesheet">
@@ -37,15 +37,27 @@
             </div>
         </div>
         
-        <!-- main body; contact -->
-         <div class="main-container">
+        <!-- main body; blackjack -->        
+        
+        <div class="blackjack-body">
             <div class="container">
-
-                
-
-
-            </div>   
+                <div class="titlu">
+                    <p id="welcome">Bun venit la Blackjack!</p>
+                </div>
+                <div class="joc">
+                    <p id="zona-jucator">JUCATOR:</p>
+                    <p id="zona-scor-jucator">Scor Jucator:</p><br>
+                    <p id="zona-dealer">DEALER:</p>
+                    <p id="zona-scor-dealer">Scor Dealer:</p><br>
+                    <input type="submit" value="New Game" id="buton-newgame"><br>
+                    <input type="submit" value="Deal" id="buton-deal">
+                    <input type="submit" value="Stay" id="buton-stay"><br><br>
+                    <p id="zona-scor-final">SCOR FINAL:</p>
+                </div>
+            </div>
         </div>
+
+        <script src="js/blackjack.js"></script>
 
         <!-- footer -->
         <footer>
