@@ -38,21 +38,23 @@
         </div>
         
         <!-- main body; blackjack -->        
-        
         <div class="blackjack-body">
             <div class="container">
                 <div class="titlu">
                     <p id="welcome">Bun venit la Blackjack!</p>
                 </div>
                 <div class="joc">
+                    <p id="mesaj-pre-joc">Vrei sa iti cheltuiesti tot salariul la Blackjack?</p><br>
+                    <input type="submit" id="buton-da" value="DA">
+                    <input type="submit" id="buton-nu" value="DA">
                     <p id="zona-jucator">JUCATOR:</p>
                     <p id="zona-scor-jucator">Scor Jucator:</p><br>
                     <p id="zona-dealer">DEALER:</p>
-                    <p id="zona-scor-dealer">Scor Dealer:</p><br>
-                    <input type="submit" value="New Game" id="buton-newgame"><br>
+                    <p id="zona-scor-dealer">Scor Dealer:</p>
+                    <input type="submit" value="New Game" id="buton-newgame">
                     <input type="submit" value="Deal" id="buton-deal">
-                    <input type="submit" value="Stay" id="buton-stay"><br><br>
-                    <p id="zona-scor-final">SCOR FINAL:</p>
+                    <input type="submit" value="Stay" id="buton-stay">
+                    <p id="zona-final-joc"></p>
                 </div>
             </div>
         </div>

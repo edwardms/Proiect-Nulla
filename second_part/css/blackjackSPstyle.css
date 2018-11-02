@@ -21,7 +21,7 @@
     width: 500px;
     min-height: 400px;
     text-align: center;
-    padding: 50px 0px;    
+    padding: 20px 0px;    
     font-size: 25px;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -42,4 +42,16 @@
 
 #zona-scor-final {
     margin-bottom: 50px;
+}
+
+#buton-da {
+    margin-right: 50px;
+}
+
+#buton-da:hover {
+    background-color: #ba6a10;
+}
+
+#buton-nu:hover {
+    background-color: #ba6a10;
 }
