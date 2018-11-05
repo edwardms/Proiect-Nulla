@@ -8,11 +8,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Monkey Tuxedo - Blackjack</title>
+        <title>Monkey Tuxedo - Galerie foto</title>
         <link href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/blackjackSPstyle.css" rel="stylesheet">
+        <link href="css/galerieSPstyle.css" rel="stylesheet">
     </head>
 
     <body>
@@ -30,36 +30,33 @@
                         }
                     ?> 
                     <li><a href="diverseSP.php">Diverse</a></li>
-                    <li><a href="blackjackSP.php" style="text-decoration: underline">Blackjack</a></li>
-                    <li><a href="galerieSP.php">Galerie foto</a></li>
+                    <li><a href="blackjackSP.php">Blackjack</a></li>
+                    <li><a href="galerieSP.php" style="text-decoration: underline">Galerie foto</a></li>
                     <li><a href="../contact.php">Contact</a></li>
                 </ul>
             </div>
         </div>
         
-        <!-- main body; blackjack -->        
-        <div class="blackjack-body">
+        <!-- main body; galerie -->        
+        <div class="galerie">
             <div class="container">
-                <div class="titlu">
-                    <p id="welcome">Bun venit la Blackjack!</p>
+                <div>
+                    <img src="poze_galerie/xampp.jpg" alt="a">
+                    <img src="poze_galerie/apachehttpserver.jpg" alt="b">
+                    <img src="poze_galerie/mariadb.jpg" alt="c">
                 </div>
-                <div class="joc">
-                    <p id="mesaj-pre-joc">Vrei sa iti cheltuiesti tot salariul la Blackjack?</p><br>
-                    <input type="submit" id="buton-da" value="DA">
-                    <input type="submit" id="buton-nu" value="DA">
-                    <p id="zona-jucator">JUCATOR:</p>
-                    <p id="zona-scor-jucator">Scor Jucator:</p><br>
-                    <p id="zona-dealer">DEALER:</p>
-                    <p id="zona-scor-dealer">Scor Dealer:</p><br>
-                    <input type="submit" value="New Game" id="buton-newgame">
-                    <input type="submit" value="Deal" id="buton-deal">
-                    <input type="submit" value="Stay" id="buton-stay">
-                    <p id="zona-final-joc"></p>
+                <div>
+                    <img src="poze_galerie/php.jpg" alt="a">
+                    <img src="poze_galerie/html.jpg" alt="b">
+                    <img src="poze_galerie/css.jpg" alt="c">
+                </div>
+                <div>
+                    <img src="poze_galerie/javascript.jpg" alt="a">
+                    <img src="poze_galerie/phpmyadmin.jpg" alt="b">
+                    <img src="poze_galerie/visualstudiocode.jpg" alt="c">
                 </div>
             </div>
         </div>
-
-        <script src="js/blackjack.js"></script>
 
         <!-- footer -->
         <footer>

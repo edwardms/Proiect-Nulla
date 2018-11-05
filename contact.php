@@ -28,7 +28,7 @@
                             echo '
                             <li><a href="second_part/diverseSP.php">Diverse</a></li>
                             <li><a href="second_part/blackjackSP.php">Blackjack</a></li>
-                            <li><a href="#">Galerie foto</a></li>                            
+                            <li><a href="second_part/galerieSP.php">Galerie foto</a></li>                            
                             ';
                         }
                     ?>                    

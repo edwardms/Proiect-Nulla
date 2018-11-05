@@ -1,0 +1,14 @@
+.galerie {
+    height: 700px;
+    background-color: #d6ecf9;
+}
+
+.primul-rand {
+
+}
+
+.galerie img {
+    width: 300px;
+    height: 200px;
+    margin: 25px 10px 0px 15px;
+}

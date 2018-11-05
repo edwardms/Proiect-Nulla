@@ -101,7 +101,7 @@ function incepeJoc() {
         displayZoneJoc(butonNewgame, 'inline');
         zonaScorDealer.innerText = 'Scor Dealer: 21';        
         displayZoneJoc(zonaScorFinal, 'block');
-        zonaScorFinal.innerText = 'FINAL JOC:\n' + 'BLACKJACK' + '\nDealerul a castigat! :(';
+        zonaScorFinal.innerText = 'FINAL JOC:\n' + 'BLACKJACK\n' + '\nDealerul a castigat! :(';
     } if (blackjack(cartiJucator)) {        
         displayZoneJoc(butonDeal, 'none');
         displayZoneJoc(butonStay, 'none');
@@ -109,7 +109,7 @@ function incepeJoc() {
         zonaScorJucator.innerText = 'Scor Jucator: 21';
         if (!blackjack(cartiDealer)) {                 
             displayZoneJoc(zonaScorFinal, 'block');
-            zonaScorFinal.innerText = 'FINAL JOC:\n'+ 'BLACKJACK' + '\nUhuuu! Ai castigat! :)';
+            zonaScorFinal.innerText = 'FINAL JOC:\n'+ 'BLACKJACK\n' + '\nUhuuu! Ai castigat! :)';
         }        
     }
 

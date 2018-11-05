@@ -31,7 +31,7 @@
                     ?> 
                     <li><a href="diverseSP.php">Diverse</a></li>
                     <li><a href="blackjackSP.php">Blackjack</a></li>
-                    <li><a href="#">Galerie foto</a></li>
+                    <li><a href="galerieSP.php">Galerie foto</a></li>
                     <li><a href="../contact.php">Contact</a></li>
                 </ul>
             </div>
